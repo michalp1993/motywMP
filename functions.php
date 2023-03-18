@@ -21,3 +21,8 @@ function motywmp_theme_setup(){
 }
 
 add_action( 'after_setup_theme', 'motywmp_theme_setup');
+
+function mp_custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'mp_custom_excerpt_length');

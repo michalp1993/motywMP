@@ -1,7 +1,7 @@
 <?php
 get_header();
 
-
+echo '<div class="container">';
 if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post();
@@ -18,5 +18,5 @@ if ( have_posts() ) {
 		echo the_content();
 	}
 }
-
+echo '</div>';
 get_footer();
